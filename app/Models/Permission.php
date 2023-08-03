@@ -13,6 +13,6 @@ class Permission extends Model
         return $this->belongsToMany(Role::class,'role_permissions');//roles_permission is table name here 
     }
     public function users(){
-        return $this->belongsToMany(User::class,'users_permissions');//roles_permission is table name here 
+        return $this->belongsToMany(User::class,'users_permissions');//users_permissions is table name here 
     }
 }
